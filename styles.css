@@ -95,3 +95,115 @@ header nav{
     font-weight: bold;
     color: var(--text);     /* Явно задаем черный цвет текста */
 }
+
+.login-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.auth-form{
+    background-color: var(--bg);
+    padding: 40px;
+    border-radius: 15px ;
+    border: 2px solid var(--border);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form h2{
+    text-align: center;
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.form-group input{
+    padding: 12px;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+
+.btn-submit{
+    padding: 12px;
+    background-color: var(--bgp);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover{
+    background-color: var(--bgci);
+}
+
+.choose-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+.choose-form{
+    background-color: var(--bg);
+    padding: 40px;
+    border-radius: 15px ;
+    border: 2px solid var(--border);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.btn-chs1{
+    display:inline-block;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px;
+    background-color: var(--bgp);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-chs2{
+    display:inline-block;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px;
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
