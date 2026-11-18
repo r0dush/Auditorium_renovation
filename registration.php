@@ -1,3 +1,4 @@
+<?php require_once 'db.php'?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,17 +13,17 @@
             <div class="main-content">
                 <main>
                     <div class="login-page">
-                        <form action="login_handler.php" method="post" class="auth-form">
+                        <form action="registration_handler.php" method="post" class="auth-form">
                             <h2>Регистрация в системе</h2>
 
                             <div class="form-group">
                                 <label for="name">Имя:</label>
-                                <input type="text" id="name" placeholder="Введите ваше имя" required>
+                                <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
                             </div>
 
                             <div class="form-group">
                                 <label for="surname">Фамилия:</label>
-                                <input type="text" id="surname" placeholder="Введите вашу фамилию" required>
+                                <input type="text" id="surname" name="surname" placeholder="Введите вашу фамилию" required>
                             </div>
 
                             <div class="form-group">
@@ -37,7 +38,7 @@
 
                             <div class="form-group">
                                 <label for="user_password2">Пароль:</label>
-                                <input type="password" id="user_password2" name="password" placeholder="Повторите пароль" required>
+                                <input type="password" id="user_password2" name="password_conf" placeholder="Повторите пароль" required>
                             </div>
 
                             <button type="submit" class="btn-submit">Войти</button> 
