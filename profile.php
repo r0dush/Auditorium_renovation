@@ -1,5 +1,6 @@
-<?php require_once 'db.php';
-session_start();?>
+<?php require_once 'db.php';    
+    require_once 'chek_out.php';
+?>
 
 <!DOCTYPE html>
 <html>
@@ -20,7 +21,11 @@ session_start();?>
                     </div>
                 </main>
                 <section></section>
-                <footer></footer>
+                <footer>
+                    <div class="log_out">
+                        <a href="logout.php" class="btn-chs2">Выйти</a>
+                    </div>
+                </footer>
             </div>
         </div>
     </body>
