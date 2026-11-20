@@ -1,4 +1,5 @@
-<?php require_once 'db.php'?>
+<?php require_once 'db.php';
+session_start();?>
 <!DOCTYPE html>
 <html>
     <head>
